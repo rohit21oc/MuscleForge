@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height:100%;
+    background-color: grey;
+}
+
+#maintext{
+    position: absolute;
+    z-index: 9999;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#maintext h1{
+    font-size: 7.5vw;
+    color: #fff;
+    white-space: nowrap;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}
+#maintext h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4vw;
+    color: #fff;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Left */
+
+#left{
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-color: rgb(45, 57, 80);
+}
+
+#left #centreimg{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: #fff; */
+    background-image:url("https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=1396&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
+    background-size: cover;
+    /* background-position: center; */
+    /* border-radius: 10px; */
+
+}
+
+#centreimg #text{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    /* justify-content: center; */
+    /* background-color: red; */
+    bottom: -30%;
+}
+#text #parts{
+    width: 30%;
+    color: #fff;
+    font-family: "gilroy";
+    /* padding-bottom: 30px; */
+
+}
+#parts h5{
+    padding-bottom: 20px;
+}
+#para p{
+    font-size: 9px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+
+}
+#text #para{
+    width: 70%;
+
+}
+#nav{
+    width: 90%;
+    height: 20%;
+    padding: 50px;
+    display: flex;
+    gap: 100px;
+    color: #fff;
+    /* text-decoration: none; */
+}
+#nav h3{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+#nav a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+}
+#logo{
+    /* background-color: #fff; */
+    display: flex;
+}
+#logo i{
+    bottom: 0px;
+    margin-right: 10px;
+    /* gap: 10px; */
+    /* background-color: blue; */
+}
+#scroll{
+    display: flex;
+    bottom: -10px;
+    position: absolute;
+    align-items: center;
+    gap: 10px;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+    left: 10%;
+}
+#scroll #line{
+    width: 150px;
+    height: 2px;
+    background-color: #fff;
+    /* bottom: 0; */
+}
+#scroll h4{
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+
+}
+
+/* centre */
+#centre{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+#card{
+    display: flex;
+    width: 240px;
+    height: 170px;
+    background-color: red;
+    position: absolute;
+    right: -5%;
+    bottom: 10%;
+}
+#card #icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+}
+#card #cimg{
+    width: 80%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1520936113839-69b3b2475037?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: bottom;
+}
+/* Right */
+#right{
+    width: 10%;
+    height: 100%;
+    background-color: rgb(45, 57, 80);
+}
+#right #relem{
+    display: flex;
+    /* flex-direction:column ; */
+    width: 100%;
+    height: 70%;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 9999; */
+    flex-direction: column;
+    padding:  20px;
+
+}
+#rlinks{
+    transform: rotate(90deg);
+}
+
+#rlinks a{
+    padding-right: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+
+}
